@@ -31,16 +31,16 @@ def calculate(expression):
         # Выполняем арифметическую операцию и формируем строку результата
         if operator == '+':
             result = a + b
-            operation = f"{a} + {b} = {result}"
+            operation = f"{result}"
         elif operator == '-':
             result = a - b
-            operation = f"{a} - {b} = {result}"
+            operation = f"{result}"
         elif operator == '*':
             result = a * b
-            operation = f"{a} * {b} = {result}"
+            operation = f"{result}"
         elif operator == '/':
             result = a // b  # Целочисленное деление
-            operation = f"{a} // {b} = {result}"
+            operation = f"{result}"
 
         return operation
 
