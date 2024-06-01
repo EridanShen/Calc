@@ -28,17 +28,21 @@ def calculate(expression):
         if not (1 <= a <= 10 and 1 <= b <= 10):
             raise ValueError("Числа должны быть в диапазоне от 1 до 10 включительно.")
 
-        # Выполняем арифметическую операцию
+        # Выполняем арифметическую операцию и формируем строку результата
         if operator == '+':
             result = a + b
+            operation = f"{a} + {b} = {result}"
         elif operator == '-':
             result = a - b
+            operation = f"{a} - {b} = {result}"
         elif operator == '*':
             result = a * b
+            operation = f"{a} * {b} = {result}"
         elif operator == '/':
             result = a // b  # Целочисленное деление
+            operation = f"{a} // {b} = {result}"
 
-        return result
+        return operation
 
     except ValueError as e:
         return str(e)
